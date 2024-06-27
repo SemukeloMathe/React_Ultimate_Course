@@ -1,3 +1,10 @@
-# Pizza Menu React App
+# Pizza Menu Reac
 
-This application,
+This project touches on the the following React Concepts:
+
+- Components
+- Props
+- JSX
+- Re-using components
+- Rendering Lists
+- Conditional Rendering
