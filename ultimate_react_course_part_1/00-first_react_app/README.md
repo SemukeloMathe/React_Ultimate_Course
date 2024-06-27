@@ -1,8 +1,4 @@
-# React + Vite
+# First React Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- This application is a simple react application that is meant to introduce how React works by building a single page app that fetches data from an api endpoint and renders it to the browser.
+- This simple projects showcases how simple it is to start with React.
