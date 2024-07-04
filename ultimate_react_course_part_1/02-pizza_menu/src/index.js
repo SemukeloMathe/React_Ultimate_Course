@@ -50,7 +50,7 @@ const pizzaData = [
 
 const App = () => {
   return (
-    <section>
+    <section className="container">
       <Header />
       <Menu />
       <Footer />
@@ -58,54 +58,67 @@ const App = () => {
   );
 };
 
+function Menu() {
+  return (
+    <main className="menu">
+      <h2>Our Menu</h2>
+      <Pizza
+        name="Pizza Spinaci"
+        ingredients="Tomato, Mozarello, spinach, and ricotta cheese"
+        photoName="pizzas/spinaci.jpg"
+        price={10}
+      />
+      <Pizza
+        name="Pizza Funghi"
+        ingredients="Tomato, mushrooms"
+        photoName="pizzas/funghi.jpg"
+        price={12}
+      />
+    </main>
+  );
+}
+
+function Pizza(props) {
+  console.log(props);
+  return (
+    <section className="pizza">
+      <article>
+        <img src={props.photoName} alt={props.name} />
+      </article>
+
+      <article>
+        <h3>{props.name}</h3>
+        <p>{props.ingredients}</p>
+        <span>{props.price + 3}</span>
+      </article>
+    </section>
+  );
+}
 
 function Header() {
   return (
-    <h1>
-      Fast React Pizza Co.
-    </h1>
+    <header className="header">
+      <h1>Fast React Pizza Co.</h1>
+    </header>
   );
-};
-
-function Menu() {
-  return (
-    <section>
-      <h2>Our Menu</h2>
-      <Pizza />
-      <Pizza />
-      <Pizza />
-    </section>
-  )
-};
+}
 
 function Footer() {
   const hour = new Date().getHours();
   const openHour = 8;
   const closeHour = 22;
   const isOpen = hour >= openHour && hour < closeHour;
-  console.log(isOpen);
-  // else alert("Sorry, we're closed!");
 
   return (
-    <footer>
-      {new Date().toLocaleTimeString()} We're closed!
+    <footer className="footer">
+      {isOpen ? "We're currently open" : "We're closed!"}
     </footer>
-  )
-};
-
-function Pizza() {
-  return (
-    <div>
-      <img src="pizzas/spinaci.jpg" alt="Pizza Spinach" />
-      <h2>Spinach Pizza</h2>
-      <p>Tomato, mozarello, spinach, and ricotta cheese</p>
-    </div>
   );
-};
+}
 
 const root = createRoot(document.getElementById("root"));
 root.render(
   <StrictMode>
     <App />
   </StrictMode>
-)
+);
