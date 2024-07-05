@@ -1,4 +1,4 @@
-import { StrictMode } from "react";
+import { Fragment, StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 // import pizzaData from "./data.js";
 import "./index.css";
@@ -9,7 +9,7 @@ const pizzaData = [
     ingredients: "Bread with italian olive oil and rosemary",
     price: 6,
     photoName: "pizzas/focaccia.jpg",
-    soldOut: false,
+    soldOut: true,
   },
   {
     name: "Pizza Margherita",
@@ -62,36 +62,38 @@ function Menu() {
   return (
     <main className="menu">
       <h2>Our Menu</h2>
-      <Pizza
-        name="Pizza Spinaci"
-        ingredients="Tomato, Mozarello, spinach, and ricotta cheese"
-        photoName="pizzas/spinaci.jpg"
-        price={10}
-      />
-      <Pizza
-        name="Pizza Funghi"
-        ingredients="Tomato, mushrooms"
-        photoName="pizzas/funghi.jpg"
-        price={12}
-      />
+
+      {pizzaData.length > 0 ? (
+        <Fragment>
+          <p>
+            Authentic Italian cuisine. 6 creative dishes to choose from. All from our stone oven, all organic, all delicious
+          </p>
+          <ul className="pizzas">
+            {pizzaData.map((pizza, i) => (
+              <Pizza key={i} pizzaObj={pizza} />
+            ))}
+          </ul>
+        </Fragment>
+      ) : (
+        <p>We're out of Pizzas</p>
+      )}
     </main>
   );
 }
 
-function Pizza(props) {
-  console.log(props);
+function Pizza({ pizzaObj }) {
   return (
-    <section className="pizza">
+    <li className={`pizza ${pizzaObj.soldOut ? "sold-out" : ""}`}>
       <article>
-        <img src={props.photoName} alt={props.name} />
+        <img src={pizzaObj.photoName} alt={pizzaObj.name} />
       </article>
 
       <article>
-        <h3>{props.name}</h3>
-        <p>{props.ingredients}</p>
-        <span>{props.price + 3}</span>
+        <h3>{pizzaObj.name}</h3>
+        <p>{pizzaObj.ingredients}</p>
+        <span>{pizzaObj.soldOut ? "SOLD OUT" : pizzaObj.price + 3}</span>
       </article>
-    </section>
+    </li>
   );
 }
 
@@ -105,14 +107,30 @@ function Header() {
 
 function Footer() {
   const hour = new Date().getHours();
-  const openHour = 8;
+  const openHour = 9;
   const closeHour = 22;
   const isOpen = hour >= openHour && hour < closeHour;
 
   return (
     <footer className="footer">
-      {isOpen ? "We're currently open" : "We're closed!"}
+      {isOpen ? (
+        <Order closeHour={closeHour} openHour={openHour} />
+      ) : (
+        <p>We're currently closed! We will open at {openHour}:00 AM</p>
+      )}
     </footer>
+  );
+}
+
+function Order({ closeHour, openHour }) {
+  return (
+    <div className="order">
+      <p>
+        🥳We're open from {openHour}:00 AM to {closeHour}:00 PM. Visit store
+        or order online.
+      </p>
+      <button className="btn">Order</button>
+    </div>
   );
 }
 

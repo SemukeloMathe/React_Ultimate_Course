@@ -38,9 +38,22 @@ This project touches on the the following React Concepts:
 
 ## 4. Re-using components
 
+- To re-use a component you need to redeclare the component inside jsx block you want to use the component in.
+- We also reuse components when to render lists.
+
 ## 5. Rendering Lists
 
+- The reason we use the map method to render lists in React is because the map method returns a new list that react uses to render the data.
+
 ## 6. Conditional Rendering
+
+- React will not render truthy or falsey values, but will happily render a zero.
+- We should always try to render truthy or falsey values.
+- You can use the Ternary operator to conditionally render React components.
+- Short circuiting is frowned upon but it can be used as well to conditionally render a component.
+- You can also return multiple conditional jsx based on the condition inside the function component.
+- Use the ternary operator when you need to return some piece of JSX based on a condition.
+- You can also use the template string along with the ternary operator to conditionally set CSS classes on an element.
 
 ## 7. Styling in React
 
@@ -69,3 +82,8 @@ We can choose many different options to style react components, we can use:
 - This allows react to optimize apps, avoid bugs, make apps predictable.
 - React uses a one way data flow, meaning props can only be passed down the component tree and not up the component tree(from parent component to child component, and not from child component to parent component).
   This makes applications more predictable and easier to understand and also makes applications easier to debug, as we have more control over the data and lastly boosts perfomance.
+- JSX works essentially like HTML, but we can enter _JavaScript Mode_ by using {} (for text or attributes)
+- We can place _JavaScript expressions_ inside {}.
+- Statements are _not allowed_ (if/else, for, switch).
+- _JSX_ produces a _JavaScript expression_.
+- A piece of JSX can only have _one root element_. If you need more, use _<React.Fragment>_ or the short _<>_
