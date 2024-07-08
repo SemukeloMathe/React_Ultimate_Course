@@ -13,15 +13,15 @@ function App() {
   const [open, setOpen] = useState(true);
 
   const nextMessage = () => {
-    if (count < 3) setCount(count + 1);
+    if (count < 3) setCount(c => c + 1);
   };
   const prevMessage = () => {
-    if (count > 1) setCount(count - 1);
+    if (count > 1) setCount(c => c - 1);
   };
 
   return (
     <Fragment>
-      <button className="close" onClick={() => setOpen(!open)}>
+      <button className="close" onClick={() => setOpen(op => !op)}>
         &times;
       </button>
       {open && (

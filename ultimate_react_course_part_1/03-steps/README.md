@@ -35,4 +35,9 @@ Always treat state as immutable.
 - React preserves the component state each time a component re-renders. The state is not reset unless the component disappears from the UI library entirely which is what we call unmounting.
 - It is when state is updated that a component is automatically re-rendered.
 - Whenever we want to update a component view React, we update it's State and React will react to that.
+- It's important to know that each component has and manages its own state, no matter how many times we render the same component on different broswer tabs or browsers.
+- State is isolated from each component.
+
+For data that should not trigger componnet re-renders, don't use state. JUst use regular variables instead.
+
 - _React reacts to state changes by Re-Rendering the UI_ -_NB_\* _State is tool. Mastering state will unlock the power of React development._
