@@ -24,5 +24,15 @@ State allows Developers to:
 
 The _useState_ function is a react hook. We can only call hooks on top level functions.
 We should only update State using the setter functions.
+Always treat state as immutable.
 
-_NB_\* _State is tool. Mastering state will unlock the power of React development._
+## The mechanics of State in React
+
+- We don't do direct DOM manipulations, this is because REACT is declarative.
+- React updates a view by re-rendering the component.
+- By re-rendering we mean React calls the component function again.
+- We can imagine React removing the entire view and replacing it with a new one each time a re-render happens.
+- React preserves the component state each time a component re-renders. The state is not reset unless the component disappears from the UI library entirely which is what we call unmounting.
+- It is when state is updated that a component is automatically re-rendered.
+- Whenever we want to update a component view React, we update it's State and React will react to that.
+- _React reacts to state changes by Re-Rendering the UI_ -_NB_\* _State is tool. Mastering state will unlock the power of React development._
