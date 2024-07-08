@@ -12,17 +12,19 @@ function App() {
   const [count, setCount] = useState(1);
   // const count = 3;
   const nextMessage = () => {
-    setCount(c => c + 1);
+    if (count < 3)
+      setCount(count + 1);
   }
   const prevMessage = () => {
-    setCount(c => c - 1);
+    if (count > 1)
+      setCount(count - 1);
   }
 
   return <div className="steps">
     <div className="numbers">
-      <div className={`${count >= 1 ? "active" : ""}`}>1</div>
-      <div className={`${count >= 2 ? "active" : ""}`}>2</div>
-      <div className={`${count >= 3 ? "active" : ""}`}>3</div>
+      <div className={count >= 1 ? "active" : ""}>1</div>
+      <div className={count >= 2 ? "active" : ""}>2</div>
+      <div className={count >= 3 ? "active" : ""}>3</div>
     </div>
     <p className="message">Step {count}: {messages[count - 1]}</p>
     <div className="buttons">
