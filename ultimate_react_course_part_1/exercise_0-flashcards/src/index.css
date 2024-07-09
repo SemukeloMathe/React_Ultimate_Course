@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Wittgenstein";
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  display: flex;
+}
+
+.flashcard-list {
+  display: grid;
+  grid-template-columns: 1r 1r 1r;
+  gap: 20px;
+}
+
+.flashcard {
+  width: 400px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px #ccc;
+  background-color: #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: 0.2s all ease;
+}
+
+.flashcard p {
+  font-weight: 500;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.active {
+  transition: 0.2s all ease;
+  background-color: #e74c3c;
+  border: #e74c3c;
+  font-weight: bolder;
+}
+
+.active p {
+  color: #ecf0f1;
+  font-size: 1.2rem;
+}
