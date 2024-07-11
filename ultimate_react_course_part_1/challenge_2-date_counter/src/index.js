@@ -6,7 +6,7 @@ const App = () => {
   const [step, setStep] = useState(1);
   const [count, setCount] = useState(0);
 
-  const date = new Date();
+  const date = new Date("January 01 2024");
   date.setDate(date.getDate() + count);
 
   const incrCount = () => {

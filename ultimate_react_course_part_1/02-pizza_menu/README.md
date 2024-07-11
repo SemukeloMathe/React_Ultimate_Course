@@ -44,6 +44,7 @@ This project touches on the the following React Concepts:
 ## 5. Rendering Lists
 
 - The reason we use the map method to render lists in React is because the map method returns a new list that react uses to render the data.
+- We loop over the array using the JS map method.
 
 ## 6. Conditional Rendering
 

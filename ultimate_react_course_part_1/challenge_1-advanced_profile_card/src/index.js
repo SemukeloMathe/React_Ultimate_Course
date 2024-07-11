@@ -35,7 +35,15 @@ const skills = [
     skill: "CSS",
     level: "beginner",
     color: "#d35400"
-  },
+  }, {
+    skill: "Git",
+    level: "expert",
+    color: "#16a085"
+  }, {
+    skill: "Scala",
+    level: "beginner",
+    color: "#f39c12"
+  }
 ]
 
 const App = () => {
