@@ -43,7 +43,7 @@ function App() {
         {count === 0 && `Today is ${curDate}`}
         {count === 1 && `Tomorrow is ${curDate}`}
         {count === -1 && `Yesterday was ${curDate}`}
-        {count < -1 && `${count} days ago was ${curDate}`}
+        {count < -1 && `${Math.abs(count)} days ago was ${curDate}`}
         {count > 1 && `${count} days from today is ${curDate}`}
       </p>
 
