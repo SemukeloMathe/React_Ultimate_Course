@@ -7,18 +7,14 @@ function App() {
   const [count, setCount] = useState(0);
   const date = new Date();
   date.setDate(date.getDate() + count);
-
-  // const resetStats = () => {
-  //   setCount(0);
-  //   setStep(0);
-  // }
+  const curDate = date.toDateString();
 
   return (
     <section className="app">
       <article className="slider">
         <input
           type="range"
-          min={0}
+          min={1}
           max={10}
           value={step}
           onChange={(e) => setStep(Number(e.target.value))}
@@ -44,11 +40,11 @@ function App() {
 
       <br />
       <p className="date">
-        {count === 0 && `Today is ${date.toDateString()}`}
-        {count === 1 && `Tomorrow is ${date.toDateString()}`}
-        {count === -1 && `Yesterday was ${date.toDateString()}`}
-        {count < -1 && `${count} days ago was ${date.toDateString()}`}
-        {count > 1 && `${count} days from today is ${date.toDateString()}`}
+        {count === 0 && `Today is ${curDate}`}
+        {count === 1 && `Tomorrow is ${curDate}`}
+        {count === -1 && `Yesterday was ${curDate}`}
+        {count < -1 && `${count} days ago was ${curDate}`}
+        {count > 1 && `${count} days from today is ${curDate}`}
       </p>
 
       <br />

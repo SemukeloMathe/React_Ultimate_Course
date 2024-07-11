@@ -19,6 +19,10 @@
   gap: 10px;
 }
 
+.slider input {
+  width: 145px;
+}
+
 .slider p {
   font-size: 1.1rem;
 }
