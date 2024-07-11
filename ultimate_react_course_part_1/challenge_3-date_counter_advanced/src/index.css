@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 1rem;
+}
+
+.slider {
+  display: flex;
+  gap: 10px;
+}
+
+.slider p {
+  font-size: 1.1rem;
+}
+
+.buttons {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  gap: 10px;
+}
+
+.buttons button {
+  width: 30px;
+  height: 30px;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.buttons input {
+  font-size: 1.2rem;
+  padding: 0.1rem;
+}
+
+.date {
+  font-size: 1.4rem;
+}
+
+.reset {
+  width: 84px;
+  height: 44px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  border: none;
+}
