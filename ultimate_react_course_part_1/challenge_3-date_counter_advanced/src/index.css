@@ -27,7 +27,7 @@
   display: flex;
   width: 80%;
   justify-content: center;
-  gap: 10px;
+  gap: 2px;
 }
 
 .buttons button {
@@ -43,6 +43,7 @@
 .buttons input {
   font-size: 1.2rem;
   padding: 0.1rem;
+  width: 100px;
 }
 
 .date {
