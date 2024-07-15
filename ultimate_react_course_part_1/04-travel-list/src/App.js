@@ -12,12 +12,18 @@ const App = () => {
 
   function addItems(item) {
     setItems(items => [...items, item]);
-  }
+  };
+
+  function deleteItem(id) {
+    console.log(id);
+    setItems(items => items.filter((item) => item.id !== id));
+  };
+
   return (
     <div className="app">
       <Logo />
-      <Form onAddItems={addItems} />
-      <PackingList items={items} />
+      <Form items={items} onAddItems={addItems} />
+      <PackingList items={items} onDeleteItem={deleteItem} />
       <Stats />
     </div>
   );
@@ -27,7 +33,7 @@ function Logo() {
   return <h1>🏝️Far Away💼</h1>;
 }
 
-function Form({ onAddItems }) {
+function Form({ items = { items }, onAddItems }) {
   const [description, setDescription] = useState("");
   const [quantity, setQuantity] = useState(1);
 
@@ -39,7 +45,7 @@ function Form({ onAddItems }) {
       description: description,
       quantity: quantity,
       packed: false,
-      id: initialItems.length + 1,
+      id: items.length + 1,
     };
     onAddItems(newItem);
     setDescription("");
@@ -67,25 +73,25 @@ function Form({ onAddItems }) {
   );
 }
 
-function PackingList({ items }) {
+function PackingList({ items, onDeleteItem }) {
   return (
     <div className="list">
       <ol>
         {items.map((item) => (
-          <Item item={item} key={item.id} />
+          <Item item={item} key={item.id} onDeleteItem={onDeleteItem} />
         ))}
       </ol>
     </div>
   );
 }
 
-function Item({ item }) {
+function Item({ item, onDeleteItem }) {
   return (
     <li>
       <span style={item.packed ? { textDecoration: "line-through" } : {}}>
         {item.quantity} {item.description}
       </span>
-      <button>❌</button>
+      <button onClick={() => onDeleteItem(item.id)}>❌</button>
     </li>
   );
 }
