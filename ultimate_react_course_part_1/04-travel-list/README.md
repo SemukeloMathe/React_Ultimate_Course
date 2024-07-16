@@ -79,6 +79,10 @@ State Manament: Deciding _when_ to create pieces of state, what _types_ of state
 - State that is defined in a component and only that component and child components have access to it (by passing via props)
 - Declared using the useState Hook.
 
+## Derived State
+
+- State that is computed from an existing piece of state or from props.
+
 ## Key Notes
 
 - In react each piece of state is either local or global.
