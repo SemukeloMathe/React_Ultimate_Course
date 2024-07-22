@@ -23,7 +23,10 @@ const App = () => {
   return <div className="app">
     <div className="sidebar">
       <FriendList />
+      <AddFriend />
+      <Button>Add Friend</Button>
     </div>
+    <SplitBillForm />
   </div>
 };
 
@@ -43,13 +46,45 @@ const Friend = ({ friend }) => {
     {friend.balance < 0 && <p className="red">You owe {friend.name} {Math.abs(friend.balance)}</p>}
     {friend.balance > 0 && <p className="green">{friend.name} owes you {Math.abs(friend.balance)}</p>}
     {friend.balance === 0 && <p>You and {friend.name} are even</p>}
-    <button className="button">Select</button>
+    <Button>Select</Button>
   </li>
 };
 
 const AddFriend = () => {
-  return <form onSubmit={() => { }}>
-    <input />
+  return <form className="form-add-friend" onSubmit={() => { }}>
+    <label>🧑🏽‍🤝‍🧑🏿Friend Name</label>
+    <input type="text" />
+
+    <label>🖼️Image URL</label>
+    <input type="text" />
+
+    <Button>Add</Button>
+  </form>
+}
+
+const Button = ({ children }) => {
+  return <button className="button">{children}</button>
+}
+
+const SplitBillForm = () => {
+  return <form className="form-split-bill">
+    <h2>SPlit a bill with X-friend</h2>
+    <label>💰Bill Value</label>
+    <input type="text" />
+
+    <label>🕴️Your Expense</label>
+    <input type="text" />
+
+    <label>🧑🏽‍🤝‍🧑🏿X's expense</label>
+    <input type="text" disabled />
+
+    <label>WHo is paying the bill?</label>
+    <select>
+      <option value={"user"}>You</option>
+      <option value={"friend"}>X</option>
+    </select>
+    <Button>Split Bill</Button>
+
   </form>
 }
 
