@@ -16,7 +16,7 @@ This project touches on the the following React Concepts:
 - 1. The component must be a function that starts with an uppercase letter.
 - 2. The function needs to return some mark up, usually in jsx but you can also return null.
 - 3. Each component needs to return one element.
-- 4. Never function component declarations, but always declare all your components in the top level.
+- 4. Never nest function component declarations, but always declare all your components in the top level.
 - 5. Use _fragments_ to render multiple components on the same element.
 
 ## 2. Props
