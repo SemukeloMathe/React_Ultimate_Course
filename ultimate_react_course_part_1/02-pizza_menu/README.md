@@ -1,5 +1,7 @@
 # Pizza Menu App
 
+This react applictaion displays a Pizza menu. It distinguishes between pizzas that are still in the menu and the sold out pizzas by adding a grey filter on them in the UI menu. This is a static single page application as we just diplay content only.
+
 This project touches on the the following React Concepts:
 
 ## 1. Components
