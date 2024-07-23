@@ -82,7 +82,7 @@ We can choose many different options to style react components, we can use:
 - This data that React uses is made up of _Props and State_.
 - _State_ is _internal component data_ that can be updated by the _component's_ logic.
 - _Props_ is _external compoenent data_(coming from the outside) and can only be updated by the _parent component_ and cannot be modified by the child component.
-- Components have to be pure functions in termsof props and state.
+- Components have to be pure functions in terms of props and state.
 - This allows react to optimize apps, avoid bugs, make apps predictable.
 - React uses a one way data flow, meaning props can only be passed down the component tree and not up the component tree(from parent component to child component, and not from child component to parent component).
   This makes applications more predictable and easier to understand and also makes applications easier to debug, as we have more control over the data and lastly boosts perfomance.
