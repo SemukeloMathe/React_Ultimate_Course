@@ -41,7 +41,7 @@ This project touches on the the following React Concepts:
 ## 4. Re-using components
 
 - To re-use a component you need to redeclare the component inside jsx block you want to use the component in.
-- We also reuse components when to render lists.
+- We also reuse components when we render lists.
 
 ## 5. Rendering Lists
 
