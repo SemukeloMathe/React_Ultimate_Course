@@ -8,11 +8,11 @@ This exercise tests your understanding of thinking in React.
 
 The following React concepts are explored in this exercise:
 
-- Resuing Components
+- Re-using Components
 - State
 - JSX
 - Styling in React
-- List Rendering
+- Rendering Lists 
 - Conditional Rendering
 - Props
 - Children Prop
