@@ -8,7 +8,7 @@ You can add more friends to your friend list.
 
 - Rendering Lists
 - Re-using Components
-- State Logic
+- State
 - React Forms
 - Controlled Elements
 - Props & Prop Drilling
