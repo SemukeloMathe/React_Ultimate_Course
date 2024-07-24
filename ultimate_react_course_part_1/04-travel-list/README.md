@@ -12,11 +12,17 @@ In this application we capture all the necessary items that an individual needs 
 
 ## Whats the difference between State and Props
 
+##### State
+
+
 - State is internal data. Data owned by the component.
 - State can be updated by the component itself.
 - State is used to make components interactive.
 - State is the components memory.
 - Updating state causes a component to re-render.
+
+##### Props
+
 - Props is external data. Data owned by the parent component.
 - Receiving new props causes a component to re-render. Usually when the parent's state has been updated.
 - Props are read only.
