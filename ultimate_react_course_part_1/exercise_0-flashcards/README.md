@@ -2,7 +2,7 @@
 
 - This exercise demonstrates the way React renders component information in the UI based on the condition.
 - So we have flashcards on the screen, When you click on the flashcard, the flashcard displays the answer to the condition.
-- It's a good exercise that imporves your understanding of state logic.
+- It's a good exercise that improves your understanding of how state works in React.
 
 The React concepts exlored in this exercise are:
 
