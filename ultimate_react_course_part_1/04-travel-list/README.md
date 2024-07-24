@@ -64,7 +64,7 @@ When you know how to Think In React, you will be able to answer:
 3. How to assemble UI from reusable components?
 4. What pieces of state do I need for interactivity?
 5. Where to place state? (What component should "own" each piece of state?)
-6. WHat type of state can or should I use?
+6. What type of state can or should I use?
 7. How to make data flow through an app?
 
 ## Fundamentals of State Management in React
