@@ -7,7 +7,7 @@
 The React concepts exlored in this exercise are:
 
 1. Components
-2. State Logic
+2. State
 3. Rendering Lists
 4. Conditional Rendering.
 5. Props
