@@ -1,8 +1,6 @@
 # Travel List Application
 
-We capture all the necessary items that an individial needs to go on a vacation.
-This application introduces some new concepts in React so far in this learning phase.
-This project introduces the following topics:
+In this application we capture all the necessary items that an individual needs to go on a vacation. This application introduces some new concepts in React so far in this learning phase. This project introduces the following topics:
 
 ## Controlled Elements
 
@@ -26,7 +24,7 @@ This project introduces the following topics:
 
 ## Thinking In React
 
-What does thinking in React actually mean?
+#### What does thinking in React actually mean?
 
 - It means you have a very good mental model of how and when to to use all the react tools like:
 - 1. Components
@@ -35,7 +33,7 @@ What does thinking in React actually mean?
 - 4. Effects, etc.
 - It is thinking about state transitions, not element mutations.
 
-## Thinking in React As A Process
+### Thinking in React As A Process
 
 1. Break the desired UI into components and esatblish a component tree.
 2. Build a static version in React (without state)
