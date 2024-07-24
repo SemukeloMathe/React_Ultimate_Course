@@ -69,7 +69,7 @@ When you know how to Think In React, you will be able to answer:
 
 ## Fundamentals of State Management in React
 
-State Manament: Deciding _when_ to create pieces of state, what _types_ of state are necessary, _where_ to place each piece of state, and how data _flows_ through the app.
+State Management: Deciding _when_ to create pieces of state, what _types_ of state are necessary, _where_ to place each piece of state, and how data _flows_ through the app.
 
 ### Global State:
 
