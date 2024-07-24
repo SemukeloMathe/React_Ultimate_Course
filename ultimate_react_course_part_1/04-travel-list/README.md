@@ -41,7 +41,7 @@ In this application we capture all the necessary items that an individual needs 
 
 ### Thinking in React As A Process
 
-1. Break the desired UI into components and esatblish a component tree.
+1. Break the desired UI into components and establish a component tree.
 2. Build a static version in React (without state)
 3. Think about state:
 
