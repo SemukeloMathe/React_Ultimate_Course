@@ -18,7 +18,7 @@ In this application we capture all the necessary items that an individual needs 
 - State is the components memory.
 - Updating state causes a component to re-render.
 - Props is external data. Data owned by the parent component.
-- Receiving new props causes component to re-render. Usually when the parent's state has been updated.
+- Receiving new props causes a component to re-render. Usually when the parent's state has been updated.
 - Props are read only.
 - Used by parent to configure child component.
 
