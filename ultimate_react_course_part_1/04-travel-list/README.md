@@ -33,10 +33,10 @@ In this application we capture all the necessary items that an individual needs 
 ### What does thinking in React actually mean?
 
 - It means you have a very good mental model of how and when to use all the react tools like:
-- 1. Components
-- 2. State
-- 3. Data Flow
-- 4. Effects, etc.
+- i. Components
+- ii. State
+- iii. Data Flow
+- iv. Effects, etc.
 - It is thinking about state transitions, not element mutations.
 
 ### Thinking in React As A Process
