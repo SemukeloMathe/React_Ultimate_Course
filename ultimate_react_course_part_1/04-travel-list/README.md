@@ -71,19 +71,19 @@ When you know how to Think In React, you will be able to answer:
 
 State Management: Deciding _when_ to create pieces of state, what _types_ of state are necessary, _where_ to place each piece of state, and how data _flows_ through the app.
 
-### Global State:
+#### Global State:
 
 - State that many components might need.
 - Shared state that is accessible to every component in the entire application
 - Declared using the useContext Hook.
 
-### Local State:
+#### Local State:
 
 - State needed only by one or few components.
 - State that is defined in a component and only that component and child components have access to it (by passing via props)
 - Declared using the useState Hook.
 
-## Derived State
+#### Derived State
 
 - State that is computed from an existing piece of state or from props.
 
