@@ -16,7 +16,7 @@ This project touches on the the following React Concepts:
 - 1. The component must be a function that starts with an uppercase letter.
 - 2. The function needs to return some mark up, usually in jsx but you can also return null.
 - 3. Each component needs to return one element.
-- 4. Never function component declarations, but always declare all your components in the top level.
+- 4. Never nest function component declarations, but always declare all your components in the top level.
 - 5. Use _fragments_ to render multiple components on the same element.
 
 ## 2. Props
@@ -41,10 +41,11 @@ This project touches on the the following React Concepts:
 ## 4. Re-using components
 
 - To re-use a component you need to redeclare the component inside jsx block you want to use the component in.
-- We also reuse components when to render lists.
+- We also reuse components when we render lists.
 
 ## 5. Rendering Lists
 
+- To render lists we use the _map()_ method.
 - The reason we use the map method to render lists in React is because the map method returns a new list that react uses to render the data.
 - We loop over the array using the JS map method.
 
@@ -80,8 +81,8 @@ We can choose many different options to style react components, we can use:
 - React renders a component based on its current _data_ and the _UI_ will always be _kept in_ _sync_ based on that _data_.
 - This data that React uses is made up of _Props and State_.
 - _State_ is _internal component data_ that can be updated by the _component's_ logic.
-- _Props_ is _external compoenent data_(coming from the outside) and can only be updated by the _parent component_ and cannot be modified by the child component.
-- Components have to be pure functions in termsof props and state.
+- _Props_ is _external component data_(coming from the outside) and can only be updated by the _parent component_ and cannot be modified by the child component.
+- Components have to be pure functions in terms of props and state.
 - This allows react to optimize apps, avoid bugs, make apps predictable.
 - React uses a one way data flow, meaning props can only be passed down the component tree and not up the component tree(from parent component to child component, and not from child component to parent component).
   This makes applications more predictable and easier to understand and also makes applications easier to debug, as we have more control over the data and lastly boosts perfomance.
