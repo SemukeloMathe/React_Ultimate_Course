@@ -90,4 +90,4 @@ State Management: Deciding _when_ to create pieces of state, what _types_ of sta
 ## Key Notes
 
 - In react each piece of state is either local or global.
-- Always start with local state and only move to global when ypu truly need it.
+- Always start with local state and only move to global when you truly need it.
