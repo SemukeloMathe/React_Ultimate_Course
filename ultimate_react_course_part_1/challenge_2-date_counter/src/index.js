@@ -40,7 +40,7 @@ const App = () => {
         <p>{count === -1 && `Yesterday was ${date.toDateString()}`} </p>
         <p>{count === 0 && `Today is ${date.toDateString()}`}</p>
         <p>{count === 1 && `Tomorrow is ${date.toDateString()}`} </p>
-        <p>{count < -1 && `${count} days ago was ${date.toDateString()}`}</p>
+        <p>{count < -1 && `${Math.abs(count)} days ago was ${date.toDateString()}`}</p>
         <p>{count > 1 && `${count} days from today is ${date.toDateString()}`} </p>
       </div>
     </div>
