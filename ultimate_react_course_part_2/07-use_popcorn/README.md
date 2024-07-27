@@ -6,11 +6,9 @@ UsePopcorn is an application all about movies. This application is going to be a
 
 When it comes to components, an important question that we need to ask ourselves is how do I split a UI into components and when should I create new components.
 
-### How to split a ui into components
+## How to split a ui into components
 
-Ways in which we can start answering this question is:
-
-#### Size
+The way in which we can start answering this question is based on component size.
 
 - looking at the component size.
 - We classify components based on size.
@@ -26,20 +24,20 @@ Ways in which we can start answering this question is:
 - iii. Too abstracted.
 - Generally, the goal is to find the right balance between too specific and too broad.
 
-### The criteria for splitting a UI into components:
+## The criteria for splitting a UI into components:
 
-##### 1. Logical Separation of Content/Layout.
+### 1. Logical Separation of Content/Layout.
 
 - Does the component contain pieces of content or layout that _don't belong together_?
 - _You might need a new component._
 
-##### 2. Reusability
+### 2. Reusability
 
 - Is it possible to reuse part of the component?
 - Do you _want_ or _need_ to reuse it?
 - _You might need a new component._
 
-##### 3. Responsibilities / Complexity
+### 3. Responsibilities / Complexity
 
 - Is the component doing too _many different things_?
 - Does the component rely on too _many props_?
@@ -47,12 +45,12 @@ Ways in which we can start answering this question is:
 - Is the code, including JSX, too _complex/confusing_?
 - _You might need a new component_.
 
-##### 4. Personal Coding Style.
+### 4. Personal Coding Style.
 
 - Do you prefer smaller functions or components?
 - _You might need a new component_.
 
-## Key Notes
+# Key Notes
 
 - Thinking In React is all about State, Data Flow and Components.
 - When in Doubt, start with a relatively big component, then split it into smaller components as it becomes necessary.

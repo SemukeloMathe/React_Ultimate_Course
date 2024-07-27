@@ -89,7 +89,7 @@ export default function App() {
             {isOpen1 ? "–" : "+"}
           </button>
           {isOpen1 && (
-            <ul className="list">
+            <ol className="list">
               {movies?.map((movie) => (
                 <li key={movie.imdbID}>
                   <img src={movie.Poster} alt={`${movie.Title} poster`} />
@@ -102,7 +102,7 @@ export default function App() {
                   </div>
                 </li>
               ))}
-            </ul>
+            </ol>
           )}
         </div>
 
@@ -137,7 +137,7 @@ export default function App() {
                 </div>
               </div>
 
-              <ul className="list">
+              <ol className="list">
                 {watched.map((movie) => (
                   <li key={movie.imdbID}>
                     <img src={movie.Poster} alt={`${movie.Title} poster`} />
@@ -158,7 +158,7 @@ export default function App() {
                     </div>
                   </li>
                 ))}
-              </ul>
+              </ol>
             </>
           )}
         </div>
