@@ -1,6 +1,6 @@
 # Use Popcorn App
 
-UsePopcorn is an application all about movies. This application is going to be all about hooks in this project. We can search for movies, We can rate the movie, and add the movie to our watchlist and more features. This application is an introduction in thinking in react components.
+UsePopcorn is an application all about movies. This application is going to be all about hooks in this project. We can search for movies, We can rate the movie, and add the movie to our watchlist and more features. This application is an introduction to _thinking in react components_.
 
 ## Thinking In React: Components, Composition, and Reusability.
 
