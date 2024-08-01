@@ -50,6 +50,28 @@ The way in which we can start answering this question is:
 - Do you prefer smaller functions or components?
 - _You might need a new component_.
 
+# Component Categories
+
+Most of your components will _naturally_ fall into _one of three categories_:
+
+### 1. Stateless / Presentational Components
+
+- They don't have any state.
+- They are components that can receive some props and then simply present that data or some other content.
+- They are mostly small components.
+
+### 2. Stateful Components
+
+- They have state.
+- They can be usable
+
+### 3. Structural Components
+
+- These are the pages, layouts or screens of the application.
+- Results from composing alot of components together.
+- Thy can be large and non-reusable.
+- They provide some sort of structure to applications.
+
 # Key Notes
 
 - Thinking In React is all about State, Data Flow and Components.
@@ -59,7 +81,7 @@ The way in which we can start answering this question is:
 
 ---
 
-- Be aware that creating a new component _creates a new abstraction. Abstractions have a _cost_, because _more abstractions require more mental energy_ to switch back and forth between components. So try not to create new components too early.
+- Be aware that creating a new component _creates a new abstraction. Abstractions have a \_cost_, because _more abstractions require more mental energy_ to switch back and forth between components. So try not to create new components too early.
 - Its importatnt to name a component according to _what it does_ or _what it displays_. Don't be afraid of using long component names.
 - Never declare a new component _inside another component!_
 - _Co-locate related components inside the same file_. Don't separate components into different files too early.

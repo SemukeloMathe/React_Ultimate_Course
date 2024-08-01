@@ -102,7 +102,6 @@ const Search = () => {
 };
 
 const Main = () => {
-
   return (
     <main className="main">
       <ListBox />
@@ -168,7 +167,6 @@ const WatchedBox = () => {
       {isOpen2 && (
         <>
           <WatchedSummary watched={watched} />
-
           <WatchedMovieList watched={watched} />
         </>
       )}
