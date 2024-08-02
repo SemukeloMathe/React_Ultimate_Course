@@ -13,12 +13,16 @@ The way in which we can start answering this question is:
 - looking at the component size.
 - We classify components based on size.
 - We place each component on a scale from small to large, in which none of these extremes are ideal.
-- The cons of large components are:
+
+#### The cons of large components are:
+
 - i. Too many responsibilities.
 - ii. Might need too many props.
 - iii. Hard to re-use
 - iv - Complex code makes it hard to understand.
-- The cons of Small components are:
+
+#### The cons of Small components are:
+
 - i. We end up with 100s of mini-components.
 - ii. Results in a confusing code base.
 - iii. Too abstracted.
@@ -69,7 +73,7 @@ Most of your components will _naturally_ fall into _one of three categories_:
 
 - These are the pages, layouts or screens of the application.
 - Results from composing alot of components together.
-- Thy can be large and non-reusable.
+- They can be large and non-reusable.
 - They provide some sort of structure to applications.
 
 # Key Notes
