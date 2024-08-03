@@ -55,18 +55,18 @@ export default function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar movies={movies} />
       <Main movies={movies} />
     </>
   );
 }
 
-const Navbar = () => {
+const Navbar = ({ movies }) => {
   return (
     <nav className="nav-bar">
       <Logo />
       <Search />
-      <NumResults />
+      <NumResults movies={movies} />
     </nav>
   );
   // { movies.length }
@@ -81,10 +81,10 @@ const Logo = () => {
   );
 };
 
-const NumResults = () => {
+const NumResults = ({ movies }) => {
   return (
     <p className="num-results">
-      Found <strong>movies.length</strong> results
+      Found <strong>{movies.length}</strong> results
     </p>
   );
 };
