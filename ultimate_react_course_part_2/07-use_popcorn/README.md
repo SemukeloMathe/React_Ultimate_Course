@@ -76,6 +76,10 @@ Most of your components will _naturally_ fall into _one of three categories_:
 - They can be large and non-reusable.
 - They provide some sort of structure to applications.
 
+## Prop Drilling
+
+- It is passing props through several nested child components in order to get that data into some deeply nested component.
+
 # Key Notes
 
 - Thinking In React is all about State, Data Flow and Components.
