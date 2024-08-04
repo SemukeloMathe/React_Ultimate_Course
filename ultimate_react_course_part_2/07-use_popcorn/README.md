@@ -80,6 +80,16 @@ Most of your components will _naturally_ fall into _one of three categories_:
 
 - It is passing props through several nested child components in order to get that data into some deeply nested component.
 
+## Component Composition
+
+- When we do component composition we leave a hole or an empty slot in a component ready to be filled by another component we want.
+- _Component composition_ is a technique of combining different components using the _children_ prop (or explicitly defined props)
+
+### With Component Composition, We can:
+
+- i. Create highly reusable and flexible components.
+- ii. Fix Prop drilling (great for layouts). This is possible because components don't need to know their children in advance.
+
 # Key Notes
 
 - Thinking In React is all about State, Data Flow and Components.
