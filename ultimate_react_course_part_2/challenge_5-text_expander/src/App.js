@@ -29,11 +29,21 @@ const App = () => {
         discover next!
       </TextExpander>
     </div>
-  )
+  );
 };
 
-const TextExpander = () => {
-  return <div>TODO</div>
-}
+const TextExpander = ({
+  collapsedNumWords = 0,
+  expandButtonText = "",
+  collapseButtonText = "",
+  buttonColor = "",
+  expanded = false,
+  className = "",
+  children,
+}) => {
+
+
+  return <div className={`${className}`}>{children}</div>;
+};
 
 export default App;
