@@ -4,7 +4,7 @@
 - We also conditionally render the emoji displayed on the skills list based on the level of understanding thats captured in the _skills_ array.
 - And lastly we set the background color by using the color displayed in the _skills_ array.
 
-The React concepts exlored in this challenge are:
+The React concepts explored in this challenge are:
 
 1. Components
 2. Rendering Lists
