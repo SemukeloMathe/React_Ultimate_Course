@@ -25,7 +25,7 @@ It's a comprehensive course designed to take learners from React `fundamentals` 
 
 * **Deployment**: Preparing and deploying React applications to production environments.
 
-### ✅ Skills Gained
+## ✅ Skills Gained
 
 * Proficiency in React and Next.js
 * Advanced State Management Techniques
